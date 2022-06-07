@@ -1,0 +1,63 @@
+.filters{
+    display: flex;
+    flex-direction: column;
+}
+.filters p {
+	font-weight: 600;
+	color:rgb(0, 0, 0)
+}
+.origin{
+    display: flex;
+	padding-bottom: 1%;
+}
+.genres{
+    display: flex;
+}
+.genres select {
+	display: flex;
+	align-self: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+	padding: 2%;
+	margin-left: 3%;
+	max-width: 100%;
+	border: 1px solid rgb(104, 102, 102);
+	box-shadow: 0 1px 0 1px rgb(54, 54, 54);
+	border-radius: .4em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.genres select:focus {
+	background-color: #f1e03f;;
+	outline: none;
+}
+
+.origin button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-left: 15px;
+    background-color: rgb(241, 235, 238);
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 6em;
+	height: 50%;
+    border-radius: .5rem;
+    color: rgb(54, 54, 54);
+    cursor: pointer;
+   }
+   
+   .origin button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .origin button:hover:not(:disabled) {
+    background: rgb(226, 69, 69);
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }

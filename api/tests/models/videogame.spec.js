@@ -1,5 +1,4 @@
 const { Videogame, conn } = require('../../src/db.js');
-const { expect } = require('chai');
 
 describe('Videogame model', () => {
   before(() => conn.authenticate()
@@ -13,9 +12,6 @@ describe('Videogame model', () => {
         Videogame.create({})
           .then(() => done(new Error('It requires a valid name')))
           .catch(() => done());
-      });
-      it('should work when its a valid name', () => {
-        Recipe.create({ name: 'Super Mario Bros' });
       });
     });
   });

@@ -1,0 +1,35 @@
+.order{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: flex;
+    padding-bottom: 10%;
+}
+.rating{
+    display: flex;
+}
+.order p {
+	font-weight: 600;
+	color:rgb(54, 54, 54);
+}
+.order select {
+	display: flex;
+	align-self: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: #444;
+	padding: 2%;
+	margin-left: 3%;
+	max-width: 100%;
+	border: 1px solid #aaa;
+	box-shadow: 0 1px 0 1px rgb(54, 54, 54);
+	border-radius: .4em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.order select:focus {
+	background-color: #f1e03f;
+	outline: none;
+}

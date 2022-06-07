@@ -1,0 +1,66 @@
+
+.detail{
+    padding-top: 3%;
+    min-height: 100vh;
+    background:url('../assets/fondoPrueba2.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail h2{
+    font-size:xx-large;
+    color:  white;
+}
+.subDetail{
+    width: 600px;
+    background-color: rgba(248, 207, 23, 0.863);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+}
+.infoDetail{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(198, 199, 204, 0.644);
+ border-radius: 50px;
+}
+.infoDetail span {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.name{
+    font-family:'Times New Roman', Times, serif;
+    font-size:xx-large;
+    text-decoration-line: underline;
+}
+
+.detail button {
+    position: absolute;
+    left: 3%;
+    top:3%;
+    height: 50px;
+    padding: 0 20px;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    background: #f0f0f0;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+   }
+   .detail button:hover{
+    background: rgb(226, 69, 69);
+    color: white;
+    }
+   
+
+   
+   

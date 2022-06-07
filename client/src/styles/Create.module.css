@@ -1,0 +1,128 @@
+.create{
+    min-height: 100vh;
+    background:url('../assets/fondoPrueba2.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    padding-top: 1%;
+    flex-direction: column;
+    align-content:space-around
+}
+.subCreate{
+width: 800px;
+background: rgb(216, 183, 113);
+display: flex;
+justify-content: flex-start;
+margin-left: 20%;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-top: 20px;
+border-radius: 3rem;
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-left: 20px;
+}
+.preview img {
+    max-height: 100%;
+    max-width: 100%;
+    background: rgb(28, 28, 29);
+}
+.form{
+    min-width:100%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.form div{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 10px;
+}
+.form div input{
+    padding: 5px 5px;
+    margin-left: 40px;
+    width: 200px;
+    height:18px;
+    border-radius: 5px;
+    border-color: rgb(73, 71, 71);
+    border-style: hidden;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.errors{
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color:red;
+}
+.error{
+    color: red;
+}
+
+.btnHome {
+    position: relative;
+    margin-left: 20px;
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 15px;
+    border: 2px solid #000;
+    background: #f0f0f0;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+   }
+   
+   .btnHome:hover {
+    background-color: rgb(226, 69, 69);
+   }
+
+   .btnHome span {
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 700;
+    color:rgb(54, 54, 54)
+   }
+   .btnHome:hover span{
+       color: white;
+   }
+
+   .btnCreateOn{
+    border:none;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(212, 68, 68);
+    font-size: larger;
+    }
+    .btnCreateOn:hover{
+        background-color: rgb(255, 189, 9);
+    }
+    .btnCreate{
+        font-size: larger;
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #999;
+        }
+
+.containerDlt{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.deleteBtn{
+    color: rgb(255, 0, 0);
+    max-height: 100%;
+    font-size: x-large;
+    padding-right: 6px;
+    background-color: transparent;
+    border: none;
+}
+.deleteBtn:hover{
+font-size: xx-large;
+}

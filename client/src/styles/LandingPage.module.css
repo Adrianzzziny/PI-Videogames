@@ -1,0 +1,63 @@
+.landing{
+    min-height: 100vh;
+    background: url(../assets/landing.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.landing img {
+    position: absolute;
+    max-width: 360px;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 18%;
+}
+
+.header{
+    display:flex;
+    justify-content: flex-end;
+    padding-top: 5%;
+    padding-right: 20%;
+}
+
+.header span{
+margin: 10px;
+color:rgb(54, 54, 54);
+font-weight: 700;
+}
+
+.header :link {
+    text-decoration: none;
+}
+.description {
+    margin-left: 14%;
+    margin-top: 9%;
+}
+.description h1{
+font-weight: 900;
+font-size: 60px;
+color:rgb(22, 22, 22);
+}
+
+.button {
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    margin-left: 15%;
+    border-radius: 10px;
+    border: 2px solid rgb(54, 54, 54);;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    background: none;
+   }
+
+   .button:hover{
+       background: rgb(240, 211, 51);
+       box-shadow: 0 0 10px ;
+   }
+   
+   .button span {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
