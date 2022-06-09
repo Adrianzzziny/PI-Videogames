@@ -36,7 +36,7 @@ dispatch(getVideogameById(id));
                         <b>Platforms: </b><span>{detail.platforms}.</span>
                         <b>Genres: </b><span>{detail.genres}.</span><br/>
                     </div>
-                    
+                
                 </div>
             }
         </div>
