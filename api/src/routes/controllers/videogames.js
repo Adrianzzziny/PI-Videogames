@@ -8,7 +8,7 @@ const videogames= async(req,res,next)=>{
             const allVgamesByName = await getAllVideogamesByName(name);
             allVgamesByName.length ?
             res.status(200).send(allVgamesByName) :
-            res.send(["Videogame not found"])
+            res.send(["Videogame no encontrado"])
         }
         else{
             const allVgames = await getAllVideogames();

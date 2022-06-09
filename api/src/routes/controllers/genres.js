@@ -22,5 +22,5 @@ const createGenre = async (req,res)=>{
 
 }
 
-module.exports = allGenres;
+module.exports = allGenres, createGenre;
 

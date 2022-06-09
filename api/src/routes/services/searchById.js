@@ -5,23 +5,24 @@ const {Videogame, Genre} = require("../../db");
 const getInfoApiId = async(id)=>{
     try {
         const findId = await axios.get(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`)
-        const {data} = findId;
         
         return {
-                id: data.id,
-                name: data.name,
-                description: data.description_raw,
-                image: data.background_image,
-                released: data.released,
-                rating: data.rating,
-                platforms: data.platforms.map(p => p.platform.name).join(', ').trim(),
-                genres: data.genres.map(g => g.name).join(', ').trim()
+                id: findId.data.id,
+                name: findId.data.name,
+                description: findId.data.description_raw,
+                image: findId.data.background_image,
+                released: findId.data.released,
+                rating: findId.data.rating,
+                platforms: findId.data.platforms.map(p => p.platform.name).join(', ').trim(),
+                genres: findId.data.genres.map(g => g.name).join(', ').trim()
         }
     } catch (error) {
         console.log(error)
     }
    
 }
+
+    
 
 const getInfoDbId = async(id)=>{
     try {
